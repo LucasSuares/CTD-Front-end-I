@@ -1,4 +1,36 @@
-/* body{
-    background-image: url(../assets/img/23974.jpg);
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:lightgray;
+}
 
-} */
+.container{
+    width: 1120px;
+    height: 860px;
+    text-align: center;
+    background-image: url(../assets/img/23974.jpg);
+    background-size: 1120px 860px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+h1, h2{
+    margin: 0;
+    color: orange;
+    padding: 80px;
+}
+
+button{
+    padding: 20px;
+    background-color: #007090;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.referencia-imagem{
+    text-align: center;
+}
