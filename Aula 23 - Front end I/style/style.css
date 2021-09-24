@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1280px;
+    margin: auto;
+    background-color: #FF4064;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                "cabecalho cabecalho"
+                "main main"
+                "rodape rodape"
+               ;
+}
+
+
+.cabecalho{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    background-color: #FFBC01;
+    height: 200px;
+    grid-area: cabecalho;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0.9;
+    border: 1px solid #1E0433;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color:#1E0433;
+    border-radius: 30px;
+}
+
+@media only screen and (min-width: 487px){
+    li{
+        display: inline-block;
+    }
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                "banner banner"
+                "conteudo1 conteudo2" 
+    ;
+}
+
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    grid-area: banner;
+    border: 1px solid #1E0433;
+}
+
+.conteudo1{
+    border: 1px solid #1E0433;
+    background-color: #00BAE3;
+    height: 300px;
+    grid-area: conteudo1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    color: #1E0433;
+    font-weight: bold;
+}
+
+.conteudo2{
+    border: 1px solid #1E0433;
+    background-color: #00BAE3;
+    height: 300px;
+    grid-area: conteudo2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    color: #1E0433;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    visibility: visible;
+    font-size: 1.5rem;;
+}
+
+p{
+    text-align: justify;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+footer{
+    background-color: #FFBC01;
+    height: 150px;
+    grid-area: rodape;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1E0433;
+}
+
+h2{
+    text-align: center;
+    color: #1E0433;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
